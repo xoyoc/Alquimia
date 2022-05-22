@@ -239,6 +239,20 @@ section {
 .w50{
   width: 50%;
 }
+.w20{
+  width: 20%;
+}
+.navbar-brand{
+  width: 1000px;
+}
+#logo{
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+.contenedorLogo{
+  position: relative;
+}
 .menu{
   padding-bottom: 20px;
 }
