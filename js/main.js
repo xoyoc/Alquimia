@@ -274,4 +274,20 @@
       })
     });
   
-  })()
+})();
+
+/* State IDS */
+var states = ['COL', 'MIC','TAM', 'VER'];
+/* State Names */
+var state_names = ['Colima', 'Michoacán', 'Tamaulipas', 'Veracruz'];
+$(function () {
+    $('.map').maphilight({ fade: false });
+});
+$(document).ready(function () {
+    $('.area').hover(function () {
+        var id = $(this).attr('id');
+        var state = $.inArray(id, states);
+
+        $('#edo').html(state_names[state]);
+    });
+});
